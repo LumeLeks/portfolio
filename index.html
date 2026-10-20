@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Александра LumeLeks — фулстек-разработчик</title>
+  <meta name="description" content="Портфолио Александры LumeLeks: фулстек-разработка, интерфейсы, обучающие инструменты для детей.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <meta name="p:domain_verify" content="294d7a47132db5f400898c3a0f731a2f"/>
+  <meta name="google-site-verification" content="JaGt2Gop7h4ekiikX7jNRMaPG8lg3uHPvy402Py6ENE" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@800&family=Onest:wght@400;600&family=Press+Start+2P&family=JetBrains+Mono:wght@500;700&display=swap">
+
+  <link rel="stylesheet" href="css/style.css?v=6">
+</head>
+<body>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__track">
+    <pre class="loader__runner" id="loaderRunner"></pre>
+    <div class="loader__bar" id="loaderBar">[....................]</div>
+  </div>
+  <div class="loader__label">загрузка <span id="loaderPct">0</span>%</div>
+</div>
+
+<header class="hero" id="hero">
+  <img class="hero__sky" src="img/sky.jpg" alt="">
+  <canvas class="hero__rain" id="rain" aria-hidden="true"></canvas>
+  <img class="hero__fg" src="img/fg.webp" alt="Холм с травой под синим небом, на нём растут огромные тюльпаны и душистый горошек">
+  <h1 class="hero__title">Александра<br>LumeLeks<small>фулстек-разработка · 09.02.07</small></h1>
+  <div class="hero__hint">кликни по траве — добавится бегун</div>
+  <div class="lane-layer" id="heroLanes" aria-hidden="true"></div>
+</header>
+
+<main class="main">
+  <div class="wrap">
+    <div class="grass-hint" aria-hidden="true">нажми на траву — добавится бегун</div>
+
+    <section class="intro">
+      <span class="tag">обо мне</span>
+      <h2>Делаю сайты и приложения, которыми приятно пользоваться</h2>
+      <p>Учусь по специальности «Информационные системы и программирование» на последнем курсе и преподаю детям.</p>
+      <p>Больше всего в программировании мне нравится, что с его помощью можно решить почти любую задачу. Так появился Клавитраж. На занятиях я видела, что дети быстро устают от обычных тренажёров печати и начинают отвлекаться. А тренажёра для детей с дислексией я не нашла ни одного. Я не стала ждать, пока его кто-то придумает, и сделала сама.</p>
+      <p>Это особое удовольствие: предвкушать классный продукт и чувствовать, что делаешь что-то по-настоящему важное.</p>
+    </section>
+
+    <section class="section">
+      <h3>Реализованные проекты</h3>
+      <div>
+        <p class="projects-note">Здесь проекты, которые можно посмотреть прямо сейчас. Об остальных с удовольствием расскажу лично.</p>
+        <div class="projects">
+          <article class="project">
+            <h4>Клавитраж</h4>
+            <p>Клавиатурный тренажёр для детей. Есть версия, удобная для детей с дислексией. Русская и английская раскладки.</p>
+            <span class="stack">HTML · CSS · JS</span>
+            <a class="project__link" href="https://klavitrazh.ru" target="_blank" rel="noopener">klavitrazh.ru</a>
+          </article>
+          <article class="project">
+            <h4>Платформа для репетиторов</h4>
+            <p>Планы для каждого ученика, материалы, чат, звонки и доска. Написала ТЗ, делаю MVP.</p>
+            <span class="stack">React</span>
+            <span class="status">в разработке</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Навыки</h3>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h4>Программирование</h4>
+          <ul class="skills">
+            <li>Алгоритмизация</li><li>ООП</li><li>Разработка программных модулей</li><li>Мобильные приложения</li><li>Системное программирование</li><li>Flutter / Dart</li><li>JavaScript</li><li>React</li><li>Java</li><li>C#</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Веб и дизайн</h4>
+          <ul class="skills">
+            <li>HTML / CSS</li><li>Дизайн веб-приложений</li><li>Адаптивная вёрстка</li><li>Photoshop</li><li>Figma</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Базы данных</h4>
+          <ul class="skills">
+            <li>Проектирование БД</li><li>SQL</li><li>Администрирование и защита БД</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Качество и сопровождение</h4>
+          <ul class="skills">
+            <li>Тестирование ПО</li><li>Ревью кода</li><li>Интеграция модулей</li><li>Сопровождение ПО</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Информационные системы</h4>
+          <ul class="skills">
+            <li>Проектирование ИС</li><li>Техническая документация и ГОСТ</li><li>Операционные системы</li><li>Компьютерные сети</li><li>Архитектура ЭВМ</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Математика</h4>
+          <ul class="skills">
+            <li>Дискретная математика</li><li>Теория вероятностей и статистика</li><li>Численные методы</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Другое</h4>
+          <ul class="skills">
+            <li>Преподавание</li><li>Разработка продукта от идеи до запуска</li><li>Составление ТЗ</li><li>Создание MVP</li><li>Исследование потребностей пользователей</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Контакты</h3>
+      <div>
+        <dl class="contact">
+          <dt>Почта:</dt>
+          <dd><b>bogdsur@gmail.com</b> <b>LekSunFlower@yandex.ru</b></dd>
+
+          <dt>Telegram:</dt>
+          <dd>
+            <a href="https://t.me/LekSunflower" target="_blank" rel="noopener"><b>@LekSunflower</b></a>
+            <a class="channel" href="https://t.me/lumeleks" target="_blank" rel="noopener">Telegram-канал</a>
+          </dd>
+        </dl>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="footer" id="footer">
+  <div class="footer__ground" id="footerGround"></div>
+  <div class="lane-layer" id="footerLanes" aria-hidden="true" style="cursor:default"></div>
+</footer>
+
+<script src="js/script.js?v=6"></script>
+</body>
+</html>
